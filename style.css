@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: mulish;
+    /* font-family: */
 }
 .header{
     width: 100%;
@@ -10,13 +10,21 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 40px 0px;
-}
+    padding: 5px 0px;
+    position: fixed;
+    z-index: 3;
+    background-color:white;
+    }
+    .header-title{
+        margin-right: 20%;
+        font-family: 'mulish', sans-serif;
+    }
  .links{
     display: flex;
     justify-content: space-between;
     width: 40%;
     align-items: center;
+    font-family: 'mulish', sans-serif;
  }   
 
 .link-nav{
@@ -26,7 +34,7 @@
 }
 .button{
     background-color: blue;
-    padding: 15px 20px;
+    padding: 10px 15px;
     border-radius: 30px;
     border: 0px;
 }
@@ -44,43 +52,83 @@
 .show-talent{
     width: 100%;
     display: flex;
-    align-content: center;
-    justify-content: space-around;
-    padding: 30px 0px;
+    /* align-content: center;
+    justify-content: space-around; */
+    /* padding: 30px 0px;
+    padding-top: 140px; */
+    /* background-color: darkgreen; */
+    background-color: #F8F9FA;
 
 
 }
 .talent-container{
     width: 50%;
-    text-align: center;
+    /* text-align: center; */
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
     justify-content: center;
 }
 .talent-title{
-    font-size: 80px;
+    /* font-size: 80px;
+    font-family: mulish; */
+    /* position: absolute; */
+    /* background-color: coral; */
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 12%;
+    height: 60vh;
+    margin-top: -20px;
+    font-size: 90px;
+    font-family: 'newsreader', sans-serif;
+    
+
+}
+.parrafo-talent-title{
+    /* background-color: brown; */
+    margin-left: 12%;
+    font-size: 22px;
+    width: 100%;
+    font-family: 'mulish', sans-serif;
+    color: #8e9399;
 }
 .phone-container{
-    display: flex;
+    /* display: flex;
+    background-color: darkorchid;
     width: 50%;
     justify-content: center;
     align-items: center;
-
-
-
+    margin-top: 30px;
+    margin-bottom: 30px; */
+    display: flex;
+    /* background-color: rgb(160, 148, 167); */
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20%;
 }
 
 .phone-img{
     width: 50%;
+    /* position: absolute; */
+    margin-top: 40px;
+    z-index: 2;
     
 
 }
 .video{
-    width: 22%;
+    width: 17%;
     position: absolute;
     border-radius: 40px;
-    z-index: -1;
+    z-index: 1;
+    margin-top: 23px;
     
 }
 .note-container{
@@ -98,10 +146,12 @@
     height: 100vh;
     opacity: .7;
     width: 100%;
-}
+    }
 .hands-title{
     font-size: 80px;
 left: 100px;
+color: #ffff;
+font-weight: bold;
 
 
 }
@@ -134,23 +184,74 @@ left: 100px;
      font-size: 20px;
  }
  .learning-container{
+     width: 100%;
+     height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    padding: 30px 0px;
+    padding-top: 140px;
+    background-color: blue;
+    z-index: -1;
      
-     display: flex; 
+                 
  }
+
+ .phone-container-two{
+    width: 100%;
+    display: flex;
+    height: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* margin-left: 20%; */
+   
+}
+
+.phone-img-two{
+        width: 20%;
+       margin-top: 40px;
+    z-index: 2;
+    
+        
+        
+}
+.video-two{
+    
+    width: 17%;
+    position: absolute;
+    border-radius: 40px;
+    z-index: 1;
+    margin-top: 25px;
+    
+               
+    }
  .icons{
     color: -prefix-linear-gradient(top,#685ef1, #ad64ec);
-
-     color: linear-gradient(to bottom,#685ef1, #ad64ec);
-font-size: 30px; 
-width: 30px;
+    color: linear-gradient(to bottom,#685ef1, #ad64ec);
+    font-size: 30px; 
+    width: 30px;
 }
 .graphics{
-    width: 70%;
+    width: 50%;
     border: 2px solid red ;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-position: left center;
+    padding: 30px 0px;
+    margin: 5px 10px;
+
+}
+.img-phone-container{
+        width: 40%;
+    padding-left: 200px;
+    padding-top: 200px;
+    position: relative;
+    display: flex;
+    margin-left: 40px;
+
 }
 .pie{
     background-color: rgba(0, 0, 0, 1);

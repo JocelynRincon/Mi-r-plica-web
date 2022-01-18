@@ -21,9 +21,9 @@
     <header class="header">
         <h1 class="header-title"> Mi réplica web</h1>
         <div class="links">
-            <a href="Inicio" class="link-nav">Inicio</a>
-            <a href="Notas" class="link-nav">Notas</a>
-            <a href="Aprendizaje" class="link-nav">Aprendizaje</a>
+            <a href="#home" class="link-nav">Inicio</a>
+            <a href="#notas" class="link-nav">Notas</a>
+            <a href="#aprendizaje" class="link-nav">Aprendizaje</a>
             <button class="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-chat-text" viewBox="0 0 16 16">
@@ -36,12 +36,12 @@
             </button>
         </div>
     </header>
-    <section class="show-talent">
+    <section id="home" class="show-talent">
         <div class="talent-container">
-            <h2 class="talent-title"> ¡Muestrános tu talento programando! </h2>
-            <p> Esta es tu oportunidad para que nos deslumbres y <br>
+            <h2 class="talent-title"> ¡Muestrános <br> tu talento programando! </h2>
+            <p class="parrafo-talent-title"> Esta es tu oportunidad para que nos deslumbres y <br>
                 nos hagas sentir orgullosos de lo que puedes hacer <br>
-                una semana despues! </p>
+                una semana despues! </p> 
 
         </div>
         <div class="phone-container"> <img class="phone-img" src="./assets/celular.png" alt="Celular">
@@ -50,9 +50,10 @@
             </video>
         </div>
     </section>
-    <section class="note-container">
+    <section id="notas" class="note-container">
         <div class="title-btn-container">
-            <p class="hands-title"> Y toma nota... de lo que seguirás aprendiendo.
+            <p class="hands-title"> Y toma nota... <br>
+                De lo que seguirás aprendiendo.
             </p>
             <button type="button" class="note-btn">
                 <a class="link-btn" href="https://educamas.com.co/programate" target="_blank">Prográmate Educamás
@@ -68,8 +69,12 @@
 
 
     </section>
-    <section class="learning-container">
-        <div class="img-phone-container"><img src="./assets/celular.png" alt=""> </div>
+    <section id="aprendizaje" class="learning-container">
+        <div class="phone-container-two"> 
+            <img class="phone-img-two" src="./assets/celular.png" alt="Celular">
+            <video class="video-two" src="./assets/demo-pantala.mp4" autoplay muted> </video>
+        </div>
+        <!-- <div class="img-phone-container"> <img src="./assets/celular.png" alt=""> </div>
 
         <div class="graphics">
             <div class="make-frame-container">
@@ -97,7 +102,7 @@
 
                     <h2>Frameworks </h2>
                     <p>Aprenderás la utilidad de los <br>
-                        framworks y como utilizarlos.</p>
+                        frameworks y cómo utilizarlos.</p>
                 </div>
             </div>
             <div class="portafolio-full-container">
@@ -123,7 +128,7 @@
                         desarrollador fullstack </p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
     <footer class="pie">
         <div class="prog">
